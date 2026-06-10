@@ -4,11 +4,10 @@ import tkinter as tk
 from tkinter import filedialog
 from typing import List, Tuple, Union
 
-
 ## main class implementation
-class PyDialogue:
-    def __init__(self) -> "PyDialogue":
-        """Initialize the PyDialogue class."""
+class PyFileDialogue:
+    def __init__(self)->"PyFileDialogue":
+        """Initialize the PyFileDialogue class."""
         pass
 
     def askDIR(self, title: str = "Please select a directory") -> str:
