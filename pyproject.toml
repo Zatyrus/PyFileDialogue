@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "PyDialogue"
-version = "0.0.1"
+name = "PyFileDialogue"
+version = "0.0.2"
 description = "A small collection of quality-of-life methods using Python tkinter to interface with the windows file explorer."
 authors = ["Bela Vogler <bela.vogler@uni-jena.de>"]
 license = "GPL-3"
