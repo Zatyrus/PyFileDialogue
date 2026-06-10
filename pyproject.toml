@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "PyDialogue"
+version = "0.0.1"
+description = "A small collection of quality-of-life methods using Python tkinter to interface with the windows file explorer."
+authors = ["Bela Vogler <bela.vogler@uni-jena.de>"]
+license = "GPL-3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
