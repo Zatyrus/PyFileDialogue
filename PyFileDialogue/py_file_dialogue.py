@@ -47,13 +47,13 @@ def call_subdirectories(
 
 def call_file(
     title: str = "Please select a file",
-    filetypes: List[Tuple[str]] = [("All files", "*")],
+    filetypes: List[Tuple[str, str]] = [("All files", "*")],
 ) -> str:
     """Open a file dialog to select a file.
 
     Args:
         title (str, optional): Select a title for the dialog. Defaults to "Please select a file".
-        filetypes (List[Tuple[str]], optional): A list of tuples specifying the file types to display. Defaults to [("All files", "*")].
+        filetypes (List[Tuple[str, str]], optional): A list of tuples specifying the file types to display. Defaults to [("All files", "*")].
 
     Returns:
         str: The path of the selected file.
@@ -67,16 +67,16 @@ def call_file(
 
 def call_multiple_files(
     title: str = "Please select a number of files",
-    filetypes: list = [("All files", "*")],
-) -> List[str]:
+    filetypes: List[Tuple[str, str]] = [("All files", "*")],
+) -> Union[Tuple[str, ...], str]:
     """Open a file dialog to select multiple files.
 
     Args:
         title (str, optional): Select a title for the dialog. Defaults to "Please select a number of files".
-        filetypes (list, optional): A list of tuples specifying the file types to display. Defaults to [("All files", "*")].
+        filetypes (List[Tuple[str, str]], optional): A list of tuples specifying the file types to display. Defaults to [("All files", "*")].
 
     Returns:
-        List[str]: A list of paths for the selected files.
+        Union[Tuple[str, ...], str]: A tuple of paths for the selected files, or a single path if only one file is selected.
     """
     root = tk.Tk()
     root.withdraw()
